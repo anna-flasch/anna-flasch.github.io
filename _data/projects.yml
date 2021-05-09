@@ -1,7 +1,7 @@
-- name: Du möchtest gerne Singen lernen?
-  image: /assets/images/rubrik_gesangsunterricht.jpg
-  link: 
-  description: Bei mir bist du genau richtig!
+# - name: Du möchtest gerne Singen lernen?
+#   image: /assets/images/rubrik_gesangsunterricht.jpg
+#   link: 
+#   description: Bei mir bist du genau richtig!
 
 - name: Die perfekte Sängerin für Eure Hochzeit 
   link: /hochzeit
