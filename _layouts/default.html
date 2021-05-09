@@ -10,6 +10,7 @@ layout: compress
   {% include navbar.html %}
   {% include showcase.html %}
   {% include about.html %}
+  {% include ausbildung.html %}
   {% include contact.html %}
   <!--Footer begins here-->
   {% include footer.html %}
@@ -19,20 +20,29 @@ layout: compress
     var scroll = this.scrollY;
     var item = document.getElementsByClassName('navbar-item');
     /* console.log(scroll); */
-    if (scroll < 565) {
+    if (scroll < 700) {
       item[1].classList.add('is-active');
       item[2].classList.remove('is-active');
       item[3].classList.remove('is-active');
+      item[4].classList.remove('is-active');
     }
-    if (scroll > 565 && scroll < 1130) {
+    if (scroll > 700 && scroll < 1500) {
       item[1].classList.remove('is-active');
       item[2].classList.add('is-active');
       item[3].classList.remove('is-active');
+      item[4].classList.remove('is-active');
     }
-    if (scroll > 1130) {
+    if (scroll > 1500 && scroll < 2200) {
       item[1].classList.remove('is-active');
       item[2].classList.remove('is-active');
       item[3].classList.add('is-active');
+      item[4].classList.remove('is-active');
+    }
+    if (scroll > 2200) {
+      item[1].classList.remove('is-active');
+      item[2].classList.remove('is-active');
+      item[3].classList.remove('is-active');
+      item[4].classList.add('is-active');
     }
   });
 </script>
